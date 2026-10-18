@@ -1,0 +1,19 @@
+Prompt:
+Vorrei realizzare un piccolo progetto in PHP e HTML per calcolare il BMI di una persona partendo da peso e altezza.
+Il sito deve essere composto da due pagine e un file CSS. L'HTML del form iniziale (form.html) l'ho già preparato io, quindi mi serve aiuto principalmente per implementare la logica in PHP e lo stile CSS.
+La prima pagina si chiama index.html e contiene un titolo "Calcolatore BMI" e un form che invia i dati con metodo POST a bmi.php.
+Il form ha tre campi obbligatori con label e placeholder: Nome (testo, tipo "Luca"), Peso in kg (numero che accetta decimali con step="any", tipo "70") e Altezza in cm (numero intero, tipo "178").
+Ogni coppia label e input è dentro un div con classe "riga-form" e in fondo c'è il bottone "Calcola" a larghezza piena.
+La seconda pagina si chiama bmi.php. Deve prendere i dati inviati dal form, convertire l'altezza da cm a metri e calcolare il BMI con la formula peso diviso altezza al quadrato.
+Il valore del BMI va formattato a due cifre decimali con number_format. In base al risultato, deve calcolare la fascia: sotto 18.5 è SOTTOPESO (classe "sottopeso"), tra 18.5 e 24.9 è NORMOPESO (classe "normopeso"), tra 25 e 29.9 è SOVRAPPESO (classe "sovrappeso") e da 30 in poi è OBESITÀ (classe "obesita").
+La pagina mostra un titolo "Il tuo BMI", seguito da una card che ha due classi HTML, cioè "card" più la classe dinamica della fascia.
+Dentro la card vanno mostrati il nome, i dettagli ("Peso X kg - Altezza Y cm"), il numero del BMI con testo grande e il nome della fascia in maiuscolo.
+Sotto la card ci deve essere un link "Calcola di nuovo" che rimanda al form su index.html.
+Per la grafica usa stile.css.
+Il body deve avere sfondo grigio #F1F3F5, testo scurissimo #1F2328 e font sans-serif, e deve usare Flexbox per centrare tutto perfettamente sia in verticale che in orizzontale al centro dello schermo.
+La card del form ha sfondo bianco, larghezza 360px, padding 24px, angoli arrotondati 12px e un'ombra leggera.
+Il bottone ha sfondo #1F2328, testo bianco, angoli arrotondati 8px, larghezza 100% e un leggero effetto hover.
+La card del risultato ha sempre larghezza 360px, padding 24px, angoli arrotondati 12px e un bordo di 3px solid.
+I colori delle 4 classi sono: sottopeso sfondo #E3EEF9 con bordo/testo #2F6FB3; normopeso sfondo #E3F4E6 con bordo/testo #256D34; sovrappeso sfondo #FCEBD7 con bordo/testo #9A4F06; obesita sfondo #FBE2E2 con bordo/testo #B32D2D.
+Per distanziare gli elementi nei contenitori usa Flexbox in colonna con la proprietà gap.
+Mantieni il codice PHP e CSS molto semplice e scolastico.
