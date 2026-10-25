@@ -145,3 +145,14 @@ h1 {
 .link-ricalcola:hover {
     color: #0969DA;
 }
+
+.msg-errore {
+    background-color: #FBE2E2;
+    color: #B32D2D;
+    border: 1px solid #B32D2D;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
